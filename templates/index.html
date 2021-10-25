@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report Generator</title>
+</head>
+<body>
+<form action="" method=POST enctype=multipart/form-data>
+    <input name="csvfile" type="file"><br><br>
+    <input type="submit" value="Upload">
+</form>
+<p>This is for download
+<a href="{{url_for('.download_report') }}"><button>Download Report</button></a>
+</p>
+<br><br>
+</body>
+</html>
