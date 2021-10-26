@@ -82,8 +82,7 @@ def download_report():
     output.seek(0)
     cur.close()
     return Response(output, mimetype="text/csv", headers={"Content-Disposition": "attachment;filename=Report.csv"})
-    # return render_template('index.html')
-    # return redirect(url_for('upload'))
+
 
 if __name__ == "__main__":
     app.run(debug=True)
