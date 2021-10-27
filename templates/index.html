@@ -5,13 +5,16 @@
     <title>Report Generator</title>
 </head>
 <body>
-<form action="" method=POST enctype=multipart/form-data>
-    <input name="csv_file" type="file"><br><br>
-    <input type="submit" value="Upload">
-</form>
-<p>This is for download
-<a href="{{url_for('.download_report') }}"><button>Download Report</button></a>
-</p>
-<br><br>
+  <form action="" method=POST enctype=multipart/form-data>
+      <h1 align="center">Report Generator Web App</h1>
+      <br><br>
+      <p align="center">Choose <b>Upload Files</b> option to upload your csv files into database</p>
+      <p align="center">Choose <b>Download File</b> option to download the Report in either in CSV or PDF format</p>
+      <br><br>
+        <p align="center">
+            <button type="submit" name="upload" value="upload"> Upload Files </button>&nbsp&nbsp&nbsp&nbsp
+            <button type="submit" name="download" value="download"> Download File </button>
+        </p>
+  </form>
 </body>
 </html>
