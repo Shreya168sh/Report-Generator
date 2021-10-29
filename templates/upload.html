@@ -6,17 +6,6 @@
 </head>
 <body>
 <h1 align="center">Upload your Files</h1>
-<p>
-	{% with messages = get_flashed_messages() %}
-	  {% if messages %}
-		<p class=flashes>
-		{% for message in messages %}
-		  <h4>{{ message }}</h4>
-		{% endfor %}
-		</p>
-	  {% endif %}
-	{% endwith %}
-</p>
 <div align="center">
 	<form action=" " method=POST enctype=multipart/form-data>
     	<input name="csv_file" type="file" multiple="true"><br><br>
